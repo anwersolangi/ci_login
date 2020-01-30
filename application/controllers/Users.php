@@ -89,7 +89,10 @@ class Users extends CI_Controller{
     public function logout(){
         $this->session->sess_destroy();
         redirect(base_url('users/index'));
-        redirect(base_url('users/register'));
+    }
+
+    public function gitCommit(){
+        echo "This is only for git commit";
     }
 }
 
